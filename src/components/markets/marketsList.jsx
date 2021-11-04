@@ -1,19 +1,7 @@
 import { CoinDetails } from '../coins/coinDetails';
 import { MarketRow } from './marketRow';
-import styled from 'styled-components';
+import { Header, Column } from './style';
 import { useSelector } from "react-redux";
-
-const Header = styled.div`
-  border-bottom: 2px solid #eee;
-  display: flex;
-  font-weight: bold;
-  padding: 1rem;
-`
-
-const Column = styled.div`
-  align-self: center;
-  flex: 1;
-`
 
 const MarketsList = (props) => {
   const { markets } = props;
