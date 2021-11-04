@@ -18,7 +18,7 @@ const Modal = ({className, coin}) => {
           <p>Hashing Algorithm: {coin.hashing_algorithm}</p>
           <span><p>Description: <span dangerouslySetInnerHTML={{ __html: coin.description.en }} /></p></span>
           <p>Market Cap in Euro: {coin.market_data.market_cap.eur}</p>
-          <p>Homepage: <a href={coin.links.homepage[0]} target="_blank" rel="noopener noreferer">{coin.links.homepage[0]}</a></p>
+          <p>Homepage: <a href={coin.links.homepage[0]} target="_blank" rel="noopener noreferrer">{coin.links.homepage[0]}</a></p>
           <p>Genesis Date: {coin.genesis_date}</p>
         </div>
       </>
