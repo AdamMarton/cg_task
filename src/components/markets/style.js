@@ -18,6 +18,9 @@ export const Row = styled.div`
   display: flex;
   overflow: auto;
   padding: 1rem;
+  &:hover {
+    background-color: #eee;
+  }
 `
 
 export const Logo = styled.img`

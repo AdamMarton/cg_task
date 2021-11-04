@@ -2,7 +2,7 @@ import { flushCoin } from './coinsSlice';
 import store from '../../store';
 import styled from 'styled-components';
 
-const Modal = ({className, coin}) => {
+const Modal = ({ className, coin }) => {
   const closeModal = () => {
     store.dispatch(flushCoin);
   };

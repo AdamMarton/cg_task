@@ -3,14 +3,13 @@ import { MarketRow } from './marketRow';
 import { Header, Column } from './style';
 import { useSelector } from "react-redux";
 
-const MarketsList = (props) => {
-  const { markets } = props;
+export const MarketsList = ({ markets }) => {
   const coin = useSelector(state => state.coins);
 
   return (
     <div>
-      <CoinDetails coin={coin} />
-      <Header className="header">
+      <CoinDetails coin={ coin } />
+      <Header>
         <Column>Image</Column>
         <Column>Name</Column>
         <Column>Symbol</Column>
@@ -21,6 +20,4 @@ const MarketsList = (props) => {
       { markets.map((market) => <MarketRow row={ market} />) }
     </div>
   )
-}
-
-export default MarketsList;
+};

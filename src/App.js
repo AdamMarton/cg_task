@@ -1,4 +1,4 @@
-import Markets from "./components/markets";
+import { Markets } from "./components/markets";
 
 function App() {
   return (
